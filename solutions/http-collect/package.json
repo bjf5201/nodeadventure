@@ -1,0 +1,12 @@
+{
+    "name": "http-collect",
+    "version": "1.0.0",
+    "description": "Learn HTTP COLLECT",
+    "main": "http-collect.js",
+    "scripts": {
+        "test": "learnyounode verify http-collect.js"
+    },
+    "dependencies": {
+        "bl": "^6.0.16"
+    }
+}
