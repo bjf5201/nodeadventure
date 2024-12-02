@@ -1,0 +1,31 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+    "name": "JavaScript + Node + PNPM",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {
+            "installDirectlyFromGitHubRelease": true,
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers-extra/features/pnpm:2": {
+            "version": "latest"
+        }
+    },
+    // Tool-specific properties.
+    // "customizations": {},s
+    // List of ports inside the container available locally.
+    "forwardPorts": [
+        3000,
+        8080
+    ],
+    "mounts": [
+        "source=global-pnpm-store,target=${containerWorkspaceFolder}/.pnpm-store,type=volume"
+    ],
+    // Runs after container is created
+    "postCreateCommand": "sudo chown node .pnpm-store"
+}
