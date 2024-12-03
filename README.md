@@ -4,8 +4,8 @@ Learning Node via [NodeSchool's](https://nodeschool.io) WorkShopper command-line
 
 ## You Will Need
 
-[Node.js](https://nodejs.org)
-[Npm](https://npmjs.org) (Comes installed with Node)
+- [Node.js](https://nodejs.org)
+- [Npm](https://npmjs.org) (Comes installed with Node)
 
 ## Install and Run `learnyounode`
 
@@ -17,5 +17,5 @@ learnyounode
 
 ## Special Thanks
 
-[NodeSchool](https://nodeschool.io)
-[Workshopper Command Line Adventure Courses](https://github.com/workshopper)
+- [NodeSchool](https://nodeschool.io)
+- [Workshopper Command Line Adventure Courses](https://github.com/workshopper)
